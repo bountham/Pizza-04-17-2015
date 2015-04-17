@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/scripts.js"></script>
+<title>Pizza</title>
+</head>
+<body>
+<div class="container">
+<h1>Pizza Menu:</h1>
+<div class="row">
+<div class="col-sm-5" id="box1_1">
+<form id="new-list">
+<h3>What size:</h3>
+<div class="form-group">
+<input type="radio" name="pizza-size" value="12" checked>10"
+<input type="radio" name="pizza-size" value="16">12"
+</div>
+<h3>Choose main pizza:</h3>
+<div class="form-group">
+<input type="radio" name="ingredient" value="extra cheese">Cheese
+<input type="radio" name="ingredient" value="pepperoni">Pepperoni
+</div>
+<button type="submit" class="btn btn-danger">See your price</button>
+</form>
+</div>
+<div class="col-sm-5">
+</div>
+<div class="col-sm-5">
+<div id="show-price">
+<h2>Pizza is ready!</h2>
+<h4>Get whole one for $<span class="total-cost"></span></h4>
+<h4>Or get just a slice for $<span class="slice-cost"></span> a piece</h4>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
