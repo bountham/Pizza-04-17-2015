@@ -7,24 +7,4 @@ describe("BankAccount", function(){
     });
   });
 
-  describe("deposit",function(){
-    it("adds a starting balance to account",function(){
-       var testBankAccount = Object.create(BankAccount);
-       testBankAccount.deposit(50);
-       expect(testBankAccount.balance).to.equal(50);
-    });
-
-  });
-
-
-});
-
-describe("Person", function(){
-  describe("addname()", function() {
-    it("add a account holder name", function() {
-      var testpersonName = Object.create(Person);
-      testpersonName.addname();
-      expect(testpersonName.addname()).to.equal(testpersonName.name);
-    });
-  });
 });
