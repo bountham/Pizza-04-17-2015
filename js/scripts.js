@@ -1,35 +1,20 @@
  var Pizza = {
     pizzaType: [],
-    startCost: 10,
-    Pepperoni: function() {
-        if (this.pizzaType.indexOf("pepperoni") !== -1 ) {
+    pizzCost: 10,
+    Cheese: function() {
+        if (this.pizzaType.indexOf("cheese") !== -1 ) {
         return true;
         } else {
         return false;
         }
-    // },
-    // sliceNumber: function() {
-    //     if (this.pizzaSize === 24) {
-    //     return 24;
-    //     } else if (this.hasPepperoni()) {
-    //     return 12;
-    //     } else if ((this.pizzaSize === 16) || (this.pizzaSize === 18)) {
-    //     return 24;
-    //     } else {
-    //     return 8;
-    //     }
-    // },
-    // costTotal: function() {
-    //     if (this.pizzaSize === 16) {
-    //     this.startCost += 7;
-    //     } else if (this.pizzaSize === 18) {
-    //     this.startCost += 10;
-    //     } else if (this.pizzaSize === 24) {
-    //     this.startCost += 12;
-    //     }
-    //     return this.startCost;
-    // },
-    // costPerSlice: function() {
-    //     return Math.round(((this.pizzaSize /10.0) + (this.costTotal() / this.sliceNumber() * 1.0)));
-    //     }
-};
+      },
+
+    pizzaTotal: function() {
+        if (this.pizzaSize === 10) {
+        this.pizzCost += 5;
+      } else if (this.pizzaSize === 12) {
+        this.pizzCost += 7;
+        }
+        return this.pizzCost;
+    }
+  };
